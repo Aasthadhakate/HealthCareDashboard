@@ -1,5 +1,6 @@
 import { Heart } from "lucide-react"
 import { anatomyIndicators } from "../data/healthData"
+import anatomyImage from "../assets/humananatomy-removebg-preview.png" 
 
 export default function AnatomySection() {
   return (
@@ -10,7 +11,7 @@ export default function AnatomySection() {
             {/* Human anatomy image */}
             <div className="relative w-full h-full flex items-center justify-center">
               <img
-                src="/src/assets/humananatomy-removebg-preview.png"
+                src={anatomyImage} 
                 alt="Human Anatomy"
                 className="w-full h-full object-contain"
                 style={{ filter: "brightness(1.1) contrast(1.1)" }}
